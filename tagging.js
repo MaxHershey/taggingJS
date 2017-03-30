@@ -442,7 +442,7 @@
 
                 // The pressed key
                 //pressed_key     = e.which;
-				pressed_key     = e.key;
+                pressed_key     = e.key;
                 //console.log( pressed_key );
 
                 // For in loop to look to Remove Keys
@@ -614,7 +614,7 @@
                 text = $tag;
 
                 // Retrieving the $_obj of the tag
-                $tag = self.$elem.find( "input[value=" + text + "]" ).parent();
+                $tag = self.$elem.find( "input[value=\"" + text + "\"]" ).parent();
 
                 // If nothing is found, return an error
                 if ( ! $tag.length ) {
